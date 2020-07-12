@@ -1,4 +1,5 @@
 'use strict';
+var NUMBER_WIZARDS = 4;
 var NAMES = ['Иван ', 'Хуан Себастьян ', 'Мария ', 'Кристоф ', 'Виктор ', 'Юлия ', 'Люпита ', 'Вашингтон '];
 var FAMILY = ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
 var COAT_COLORS = ['rgb(101, 137, 164)', 'rgb(241, 43, 107)', 'rgb(146, 100, 161)', 'rgb(56, 159, 117)', 'rgb(215, 210, 55)', 'rgb(0, 0, 0)'];
@@ -39,7 +40,7 @@ var renderWizard = function (wizard) {
 };
 
 var renderWizards = function () {
-  var similarWizards = generateWizards(4);
+  var similarWizards = generateWizards(NUMBER_WIZARDS);
   var fragment = document.createDocumentFragment();
 
   for (var i = 0; i < similarWizards.length; i++) {
